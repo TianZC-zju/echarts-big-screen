@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.scss';
+import headerBg from '../images/header.png';
 
 export const Home = () => {
 
@@ -13,10 +14,8 @@ export const Home = () => {
     return (
         <div className='container'>
             <div className='page' style={{width: pageWidth, height: pageHeight}}>
-                你好
-                <div className="x">
-                    第一个div
-                </div>
+                <header className="header" style={{backgroundImage:`url(${headerBg})`}}>
+                </header>
             </div>
         </div>
     );
