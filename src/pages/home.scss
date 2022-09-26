@@ -9,9 +9,43 @@
   height: 100vh;
   .page{
     background: green;
+    display: flex;
+    flex-direction: column;
     .header{
       height: px(56);
       background-size:cover ;
     }
+    main{
+      flex: 1;
+      display: grid;
+      grid-template:
+      's1 s2 s4 s6' 477fr
+      's3 s3 s5 s6' 235fr    / 235fr 235fr  547fr 461fr
+    ;
+      > .section1{
+        grid-area: s1;
+        background: green;
+      }
+      > .section2{
+        grid-area: s2;
+        background: pink;
+      }
+      > .section3{
+        grid-area: s3;
+        background: red;
+      }
+      > .section4{
+        grid-area: s4;
+        background: yellow;
+      }
+      > .section5{
+        grid-area: s5;
+        background: gray;
+      }
+      > .section6{
+        grid-area: s6;
+        background: blue;
+      }
+    };
   }
 }
