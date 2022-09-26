@@ -17,12 +17,12 @@ export const Home = () => {
                 <header className="header" style={{backgroundImage:`url(${headerBg})`}}>
                 </header>
                 <main>
-                    <div className="section1"></div>
-                    <div className="section2"></div>
-                    <div className="section3"></div>
-                    <div className="section4"></div>
-                    <div className="section5"></div>
-                    <div className="section6"></div>
+                    <section className="section1"></section>
+                    <section className="section2"></section>
+                    <section className="section3"></section>
+                    <section className="section4"></section>
+                    <section className="section5"></section>
+                    <section className="section6"></section>
                 </main>
             </div>
         </div>
