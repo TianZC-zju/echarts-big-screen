@@ -9,5 +9,9 @@
   height: 100vh;
   .page{
     background: green;
+    .x{
+      width: px(236);
+      height: px(200);
+    }
   }
 }
