@@ -8,6 +8,13 @@
 </head>
 <body>
 <div id="root"></div>
+<script >
+  const {clientWidth, clientHeight} = document.documentElement
+   window.pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * 16 / 9 : clientWidth
+   window.pageHeight = pageWidth * 9 / 16
+  let html = document.querySelector('html')
+  html.style.fontSize=pageWidth/100 + 'px'
+</script>
 <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
