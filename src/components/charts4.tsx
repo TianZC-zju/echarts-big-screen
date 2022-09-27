@@ -18,6 +18,7 @@ const Charts4=()=>{
             splitLine:{show:true,lineStyle:{color:'#072852'}},
 
         },
+        axisLabel:{color: '#79839e'},
         series: [
             {
                 data: [820, 932, 901, 934, 1290, 1330, 1320],
@@ -28,7 +29,8 @@ const Charts4=()=>{
         grid:[{
             top:px(30),
             bottom:px(30),
-            left:px(40),
+            left:px(50),
+            // containLabel:true,
         }]
 
     }; ;
