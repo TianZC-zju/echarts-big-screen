@@ -39,6 +39,9 @@ export const Home = () => {
                     <section className="bordered section5"></section>
                     <section className="bordered section6"></section>
                 </main>
+                <footer>
+                    tzc
+                </footer>
             </div>
         </div>
     );

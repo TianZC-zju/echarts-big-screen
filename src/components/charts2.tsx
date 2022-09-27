@@ -8,8 +8,10 @@ const Charts2=()=>{
         legend: {
             bottom:px(2),
             // right:px(40),
-            orient:'horizontal',
-            textStyle:{color: 'white'}
+            orient:'vertical',
+            textStyle:{color: 'white',fontSize:px(14)},
+            height:px(40),
+            width:px(50),
         },
         grid:[{
             top:px(10),
