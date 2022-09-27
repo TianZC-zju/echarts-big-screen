@@ -5,6 +5,9 @@ import px from '../shared/px';
 const Charts4=()=>{
 
     const option = {
+        tooltip: {
+            trigger: 'item'
+        },
         xAxis: {
             type: 'category',
             boundaryGap: false,

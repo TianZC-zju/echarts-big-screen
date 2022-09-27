@@ -5,6 +5,9 @@ import px from '../shared/px';
 const Charts2=()=>{
 
     const option = {
+        tooltip: {
+            trigger: 'item'
+        },
         legend: {
             bottom:px(2),
             // right:px(40),

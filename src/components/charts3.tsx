@@ -7,6 +7,9 @@ import px from '../shared/px';
     useEffect(() => {
         let myChart = echarts.init(divRef.current);
         myChart.setOption({
+            tooltip: {
+                trigger: 'item'
+            },
             textStyle: {
                 fontSize: px(12),
                 color: '#79839E'
