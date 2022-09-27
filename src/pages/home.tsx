@@ -5,6 +5,8 @@ import * as echarts from 'echarts';
 import Charts1 from '../components/charts1';
 import Charts2 from '../components/charts2';
 import px from '../shared/px';
+import Charts3 from '../components/charts3';
+import Charts4 from '../components/charts4';
 
 type MonkeyWindow =  Window & typeof globalThis &{
     pageWidth: number,
@@ -31,8 +33,15 @@ export const Home = () => {
                             <Charts2/>
                         </div>
                     </section>
-                    <section className="bordered section2">
-
+                    <section className="section2">
+                      <div className="bordered line" style={{marginBottom:px(10)}}>
+                            <h1>发案趋势分析</h1>
+                            <Charts3/>
+                        </div>
+                        <div className="bordered line">
+                            <h1>案发时段分析</h1>
+                            <Charts4/>
+                        </div>
                     </section>
                     <section className="bordered section3"></section>
                     <section className="bordered section4"></section>
