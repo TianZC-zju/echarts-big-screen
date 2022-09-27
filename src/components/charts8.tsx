@@ -42,14 +42,20 @@ const Charts8 = ()=>{
     const option2 =  {
             legend: {
                 top: 'bottom',
-                textStyle:{color:'white'}
+                textStyle:{
+                    fontSize: px(10),
+                    color:'white',
+                },
+                itemHeight:px(10),
+                itemWidth:px(10),
+
             },
             series: [
                 {
                     name: 'Nightingale Chart',
                     type: 'pie',
                     radius: [px(10), px(60)],
-                    center: ['50%', '50%'],
+                    center: ['50%', '35%'],
                     roseType: 'area',
                     // itemStyle: {
                     //     borderRadius: px(3)

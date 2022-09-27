@@ -42,7 +42,12 @@ const Charts9 = ()=>{
     const option2 =  {
             legend: {
                 left: 'left',
-                textStyle:{color:'white'}
+                textStyle:{
+                    fontSize: px(10),
+                    color:'white',
+                },
+                itemHeight:px(10),
+                itemWidth:px(10),
             },
             xAxis: {show:false},
             yAxis: {show:false},
