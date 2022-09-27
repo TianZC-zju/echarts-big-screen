@@ -8,6 +8,7 @@ import px from '../shared/px';
 import Charts3 from '../components/charts3';
 import Charts4 from '../components/charts4';
 import Charts5 from '../components/charts5';
+import Charts6 from '../components/charts6';
 
 type MonkeyWindow =  Window & typeof globalThis &{
     pageWidth: number,
@@ -48,7 +49,10 @@ export const Home = () => {
                         <h1>往年战果数对比</h1>
                         <Charts5/>
                     </section>
-                    <section className="bordered section4"></section>
+                    <section className="bordered section4">
+                        <h1>全市犯罪人员籍贯分布地</h1>
+                        <Charts6/>
+                    </section>
                     <section className="bordered section5"></section>
                     <section className="bordered section6"></section>
                 </main>
