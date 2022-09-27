@@ -10,6 +10,8 @@ import Charts4 from '../components/charts4';
 import Charts5 from '../components/charts5';
 import Charts6 from '../components/charts6';
 import Charts7 from '../components/charts7';
+import Charts8 from '../components/charts8';
+import Charts9 from '../components/charts9';
 
 type MonkeyWindow =  Window & typeof globalThis &{
     pageWidth: number,
@@ -48,7 +50,7 @@ export const Home = () => {
                     </section>
                     <section className="bordered section3">
                         <h1>往年战果数对比</h1>
-                        <Charts5/>
+                        {/*<Charts5/>*/}
                     </section>
                     <section className="bordered section4">
                         <h1>全市犯罪人员籍贯分布地</h1>
@@ -58,7 +60,19 @@ export const Home = () => {
                         <h1>全市犯罪人员籍贯分布地</h1>
                         <Charts7/>
                     </section>
-                    <section className="bordered section6"></section>
+                    <section className="section6">
+                        <div className="bordered line" style={{marginBottom:px(10)}}>
+                            <h1>案发类型统计</h1>
+                            <Charts8/>
+                        </div>
+                        <div className="bordered line" style={{marginBottom:px(10)}}>
+                            <h1>案发街道统计</h1>
+                            <Charts9/>
+                        </div>
+                        <div className="bordered line">
+                            <h1>作案手段分析</h1>
+                        </div>
+                    </section>
                 </main>
                 <footer>
                     tzc
