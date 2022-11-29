@@ -5,7 +5,7 @@ import * as echarts from 'echarts';
 import Charts1 from '../components/charts1';
 import Charts2 from '../components/charts2';
 import px from '../shared/px';
-import Charts3 from '../components/charts3';
+import Charts3 from '../components/charts3_mock';
 import Charts4 from '../components/charts4';
 import Charts5 from '../components/charts5';
 import Charts6 from '../components/charts6';
@@ -54,7 +54,7 @@ export const Home = () => {
                         <Charts5/>
                     </section>
                     <section className="bordered section4">
-                        <h1>全市犯罪人员籍贯分布地</h1>
+                        <h1>浙江省能源地图</h1>
                         <Charts6/>
                     </section>
                     <section className="bordered section5">

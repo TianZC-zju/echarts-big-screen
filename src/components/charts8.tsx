@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
+import chartTheme from '../shared/echartsTheme.json'
 import px from '../shared/px';
 
 const Charts8 = ()=>{
@@ -75,10 +76,12 @@ const Charts8 = ()=>{
 
     const barRef = useRef(null)
     const barRef2 = useRef(null)
+
     useEffect(()=>{
+        echarts.registerTheme('virtualbox-power', chartTheme)
         const myChart = echarts.init(barRef.current);
         myChart.setOption(option);
-        const myChart2 = echarts.init(barRef2.current);
+        const myChart2 = echarts.init(barRef2.current,'virtualbox-power');
         myChart2.setOption(option2);
     },[])
 

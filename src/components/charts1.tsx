@@ -1,12 +1,14 @@
 import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
+import chartTheme from '../shared/echartsTheme.json'
 import px from '../shared/px';
 
 const Charts1=()=>{
 
     const barRef = useRef(null)
     useEffect(()=>{
-        const myChart = echarts.init(barRef.current);
+        echarts.registerTheme('virtualbox-power', chartTheme)
+        const myChart = echarts.init(barRef.current,'virtualbox-power' );
 // 绘制图表
         myChart.setOption({
             tooltip: {},
