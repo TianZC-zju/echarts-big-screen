@@ -38,32 +38,32 @@ const Charts2=()=>{
                 name: '发电',
                 type: 'bar',
                 data: [1,1,1,1,1,1,1,1,1],
-                itemStyle:{color:'#1440c9'},
+                // itemStyle:{color:'#1440c9'},
             },
             {
                 name: '用电',
                 type: 'bar',
                 data: [2, 2, 2, 2, 2, 2, 2, 2, 2],
-                itemStyle:{color:{
-                        type: 'linear',
-                        x: 0,
-                        y: 0,
-                        x2: 1,
-                        y2: 0,
-                        colorStops: [{
-                            offset: 0, color: '#9223ba' // 0% 处的颜色
-                        }, {
-                            offset: 1, color: '#555ab9' // 100% 处的颜色
-                        }],
-                        global: false // 缺省为 false
-                    }},
+                // itemStyle:{color:{
+                //         type: 'linear',
+                //         x: 0,
+                //         y: 0,
+                //         x2: 1,
+                //         y2: 0,
+                //         colorStops: [{
+                //             offset: 0, color: '#9223ba' // 0% 处的颜色
+                //         }, {
+                //             offset: 1, color: '#555ab9' // 100% 处的颜色
+                //         }],
+                //         global: false // 缺省为 false
+                //     }},
             }
         ]
     };
     const barRef = useRef(null)
     useEffect(()=>{
         echarts.registerTheme('virtualbox-power', chartTheme)
-        const myChart = echarts.init(barRef.current);
+        const myChart = echarts.init(barRef.current, 'virtualbox-power');
         myChart.setOption(option);
     },[])
 

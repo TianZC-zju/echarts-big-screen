@@ -74,7 +74,7 @@ const Charts6 = () => {
         },
     ]
     const option = {
-        backgroundColor: '#001634',
+        backgroundColor: 'rgba(0,0,0,0)',
         geo: {
             map: 'zhejiang',
             label: {
@@ -159,7 +159,7 @@ const Charts6 = () => {
     useEffect(() => {
         echarts.registerTheme('virtualbox-power', chartTheme)
         echarts.registerMap('zhejiang', zhejiang);
-        const myChart = echarts.init(barRef.current);
+        const myChart = echarts.init(barRef.current, 'virtualbox-power');
         myChart.setOption(option);
     }, [])
     return (

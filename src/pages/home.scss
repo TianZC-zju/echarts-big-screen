@@ -7,7 +7,9 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #001634 ;
+  //background-color: red ;
+  background-image: url("../images/starrySky.png") ;
+  background-size: cover;
   .page{
     display: flex;
     flex-direction: column;
@@ -62,7 +64,7 @@
   border: 1px solid #0764bc;
   border-radius: 4px;
   position: relative;
-  background-color: #081035;
+  //background-color: #081035;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,12 +132,12 @@ section{
   }
 
   tr>* {
-    background-color: #1c2456;
+    //background-color: #1c2456;
     color: #fff;
   }
 
   th[scope="col"] {
-    background-color: #162359;
+    //background-color: #162359;
     width: px(57);
     height: px(20);
     font-size: px(8);
@@ -199,7 +201,7 @@ section{
 footer{
   height: px(45);
   border: 1px solid #0d2d59;
-  background-color: #0c0d2b;
+  //background-color: #0c0d2b;
   color: white;
   display: flex;
   align-items: center;

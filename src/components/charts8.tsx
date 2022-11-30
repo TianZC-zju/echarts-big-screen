@@ -18,19 +18,19 @@ const Charts8 = ()=>{
                 name: '数量',
                 type: 'bar',
                 data: [10, 20, 35, 40, 15 ],
-                itemStyle:{color:{
-                        type: 'linear',
-                        x: 0,
-                        y: 0,
-                        x2: 0,
-                        y2: 1,
-                        colorStops: [{
-                            offset: 0, color: '#1d38fa' // 0% 处的颜色
-                        }, {
-                            offset: 1, color: '#0b94fb' // 100% 处的颜色
-                        }],
-                        global: false // 缺省为 false
-                    }},
+                // itemStyle:{color:{
+                //         type: 'linear',
+                //         x: 0,
+                //         y: 0,
+                //         x2: 0,
+                //         y2: 1,
+                //         colorStops: [{
+                //             offset: 0, color: '#1d38fa' // 0% 处的颜色
+                //         }, {
+                //             offset: 1, color: '#0b94fb' // 100% 处的颜色
+                //         }],
+                //         global: false // 缺省为 false
+                //     }},
 
             }],
             grid:[{
@@ -79,7 +79,7 @@ const Charts8 = ()=>{
 
     useEffect(()=>{
         echarts.registerTheme('virtualbox-power', chartTheme)
-        const myChart = echarts.init(barRef.current);
+        const myChart = echarts.init(barRef.current,'virtualbox-power' );
         myChart.setOption(option);
         const myChart2 = echarts.init(barRef2.current,'virtualbox-power');
         myChart2.setOption(option2);
