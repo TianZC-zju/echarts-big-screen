@@ -7,7 +7,7 @@ const Charts8 = ()=>{
     const option = {
             tooltip: {},
             xAxis: {
-                data: ['入室抢劫','当街盗窃','团伙诈骗','形式案件','民事案件'],
+                data: ['分类1','分类2','分类3',],
                 axisLabel:{fontSize:px(8),width:px(16),overflow:'break',interval:0},
             },
             yAxis: {
@@ -62,10 +62,10 @@ const Charts8 = ()=>{
                     //     borderRadius: px(3)
                     // },
                     data: [
-                        { value: 18, name: '经济' },
-                        { value: 20, name: '民事' },
-                        { value: 36, name: '刑式' },
-                        { value: 24, name: '其他' },
+                        { value: 18, name: '分类1' },
+                        { value: 20, name: '分类2' },
+                        { value: 36, name: '分类3' },
+                        { value: 24, name: '分类4' },
                     ]
                 }
             ]

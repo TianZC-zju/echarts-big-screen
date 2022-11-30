@@ -6,12 +6,12 @@ const Charts10 = ()=>{
         <table>
             <tr>
                 <th scope="col">年份</th>
-                <th scope="col">破案数</th>
-                <th scope="col">抓获嫌疑人</th>
-                <th scope="col">并串案件</th>
-                <th scope="col">现勘录入</th>
-                <th scope="col">视侦录入</th>
-                <th scope="col">合成案件数</th>
+                <th scope="col">字段1</th>
+                <th scope="col">字段2</th>
+                <th scope="col">字段3</th>
+                <th scope="col">字段4</th>
+                <th scope="col">字段5</th>
+                <th scope="col">字段6</th>
                 <th scope="col">合计</th>
             </tr>
             <tr>

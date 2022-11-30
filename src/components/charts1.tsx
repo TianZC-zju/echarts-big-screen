@@ -13,7 +13,7 @@ const Charts1=()=>{
         myChart.setOption({
             tooltip: {},
             xAxis: {
-                data: ['兰州新区','兰州新区','兰州新区','兰州新区','兰州新区','兰州新区','兰州新区','兰州新区','兰州新区'],
+                data: ['指标1','指标2','指标3','指标4','指标5','指标6','指标7','指标8','指标9'],
                 axisLabel:{fontSize:px(8),width:px(16),overflow:'break',interval:0},
             },
             yAxis: {

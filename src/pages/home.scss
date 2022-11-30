@@ -14,6 +14,17 @@
     .header{
       height: px(56);
       background-size:cover ;
+      text-align: center;
+      line-height: px(56);
+
+      span{
+        font-size: px(25);
+        background-image: linear-gradient(#a9d6fc,#0dacff);
+        //background-clip: text;
+        -webkit-background-clip:text;
+        color: transparent;
+
+      }
     }
     main{
       padding: px(17);

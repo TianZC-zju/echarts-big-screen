@@ -26,8 +26,8 @@ const Charts7 = ()=>{
                label: {
                    show: true,
                    position: 'center',
-                   formatter:()=>'性别',
-                   fontSize:px(40),
+                   formatter:()=>'偏差率',
+                   fontSize:px(30),
                    color:'#329ff4',
 
                },
@@ -35,8 +35,8 @@ const Charts7 = ()=>{
                    show: false
                },
                data: [
-                   { value: 80, name: '男' },
-                   { value: 20, name: '女' },
+                   { value: 80, name: '完成' },
+                   { value: 20, name: '未完成' },
 
                ]
            }
@@ -59,7 +59,7 @@ const Charts7 = ()=>{
            ...(option.series[0]),
            label: {
                ...(option.series[0].label),
-               formatter:()=>'年龄段'
+               formatter:()=>'完成率'
            },
            data: [
                { value: 7, name: '10-20' },

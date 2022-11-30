@@ -29,19 +29,19 @@ const Charts2=()=>{
         },
         yAxis: {
             type: 'category',
-            data: ['七里河区公安局', '七里河区公安局','七里河区公安局','七里河区公安局','七里河区公安局','七里河区公安局','七里河区公安局','七里河区公安局','七里河区公安局'],
+            data: ['类型1','类型2','类型3','类型4','类型5','类型6','类型7','类型8',],
             splitLine:{show:false},
             axisLabel:{fontSize:px(8),width:px(32),overflow:'break',interval:0},
         },
         series: [
             {
-                name: '破案排名1',
+                name: '发电',
                 type: 'bar',
                 data: [1,1,1,1,1,1,1,1,1],
                 itemStyle:{color:'#1440c9'},
             },
             {
-                name: '破案排名2',
+                name: '用电',
                 type: 'bar',
                 data: [2, 2, 2, 2, 2, 2, 2, 2, 2],
                 itemStyle:{color:{
