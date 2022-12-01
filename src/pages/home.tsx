@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import './home.scss';
-import headerBg from '../images/header.png';
+import headerBg from '../images/header1.png';
 import * as echarts from 'echarts';
 import Charts1 from '../components/charts1';
 import Charts2 from '../components/charts2';
@@ -13,6 +13,7 @@ import Charts7 from '../components/charts7';
 import Charts8 from '../components/charts8';
 import Charts9 from '../components/charts9';
 import Charts10 from '../components/charts10';
+import {Button} from 'antd';
 
 type MonkeyWindow =  Window & typeof globalThis &{
     pageWidth: number,
@@ -27,7 +28,15 @@ export const Home = () => {
         <div className='container'>
             <div className='page' style={{width: pageWidth, height: pageHeight}}>
                 <div className="header" style={{backgroundImage:`url(${headerBg})`}}>
-                    <span>虚拟电厂</span>
+                    <div className="headerLeft">
+                            <span>资源管理</span>
+                        <span>负荷预测</span>
+                    </div>
+                    <div className='headerCenter'>虚拟电厂</div>
+                    <div className="headerRight">
+                        <span>运行效果</span>
+                    </div>
+
                 </div>
                 <main>
                     <section className="section1">
