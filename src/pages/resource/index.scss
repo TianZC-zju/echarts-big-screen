@@ -1,0 +1,44 @@
+@import "../../shared/helper";
+
+.container-page{
+  padding:px(20);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template:
+    's1 s4 s6'1fr
+    's2 s4 s7'1fr
+    's3 s5 s7'1fr  / 1fr 2fr 1fr
+;
+  grid-row-gap: px(20);
+  grid-column-gap:px(20) ;
+
+  section{
+    >*{
+      height: 100%;
+    }
+
+  }
+
+  .section1{
+    grid-area: s1;
+  }
+  .section2{
+    grid-area: s2;
+  }
+  .section3{
+    grid-area: s3;
+  }
+  .section4{
+    grid-area: s4;
+  }
+  .section5{
+    grid-area: s5;
+  }
+  .section6{
+    grid-area: s6;
+  }
+  .section7{
+    grid-area: s7;
+  }
+}

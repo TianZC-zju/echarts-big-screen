@@ -1,7 +1,5 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import './home.scss';
-import headerBg from '../images/header1.png';
-import * as echarts from 'echarts';
 import Charts1 from '../components/charts1';
 import Charts2 from '../components/charts2';
 import px from '../shared/px';
@@ -13,83 +11,58 @@ import Charts7 from '../components/charts7';
 import Charts8 from '../components/charts8';
 import Charts9 from '../components/charts9';
 import Charts10 from '../components/charts10';
-import {Button} from 'antd';
-
-type MonkeyWindow =  Window & typeof globalThis &{
-    pageWidth: number,
-    pageHeight: number,
-}
-const {pageWidth, pageHeight} =  window as MonkeyWindow
-
+import VPContainer from '../components/container';
+import VPBorderBox from '../components/borderBox';
 
 export const Home = () => {
 
     return (
-        <div className='container'>
-            <div className='page' style={{width: pageWidth, height: pageHeight}}>
-                <div className="header" style={{backgroundImage:`url(${headerBg})`}}>
-                    <div className="headerLeft">
-                            <span>资源管理</span>
-                        <span>负荷预测</span>
+        <VPContainer>
+            <main className='home'>
+                <section className="section1">
+                    <VPBorderBox title='容量指标' className='bar'>
+                        <Charts1/>
+                    </VPBorderBox>
+                    <VPBorderBox title='发电单元类型分布' className='bar bar2'>
+                        <Charts2/>
+                    </VPBorderBox>
+                </section>
+                <section className="section2">
+                    <VPBorderBox title='负荷曲线' className='line'>
+                        <Charts3/>
+                    </VPBorderBox>
+                    <VPBorderBox title='考核指标' className='line'>
+                        <Charts4/>
+                    </VPBorderBox>
+                </section>
+                <section className="bordered section3">
+                    <h1>容量指标</h1>
+                    <Charts5/>
+                </section>
+                <section className="bordered section4">
+                    <h1>浙江省能源地图</h1>
+                    <Charts6/>
+                </section>
+                <section className="bordered section5">
+                    <h1>容量指标</h1>
+                    <Charts7/>
+                </section>
+                <section className="section6">
+                    <div className="bordered line" style={{marginBottom:px(10)}}>
+                        <h1>容量指标</h1>
+                        <Charts8/>
                     </div>
-                    <div className='headerCenter'>虚拟电厂</div>
-                    <div className="headerRight">
-                        <span>运行效果</span>
+                    <div className="bordered line" style={{marginBottom:px(10)}}>
+                        <h1>运行模式</h1>
+                        <Charts9/>
                     </div>
+                    <div className="bordered line">
+                        <h1>当日累计调控</h1>
+                        <Charts10/>
+                    </div>
+                </section>
+            </main>
 
-                </div>
-                <main>
-                    <section className="section1">
-                        <div className="bordered bar" style={{marginBottom:px(10)}}>
-                            <h1>容量指标</h1>
-                            <Charts1/>
-                        </div>
-                        <div className="bordered bar bar2">
-                            <h1>发电单元类型分布</h1>
-                            <Charts2/>
-                        </div>
-                    </section>
-                    <section className="section2">
-                      <div className="bordered line" style={{marginBottom:px(10)}}>
-                            <h1>负荷曲线</h1>
-                            <Charts3/>
-                        </div>
-                        <div className="bordered line">
-                            <h1>考核指标</h1>
-                            <Charts4/>
-                        </div>
-                    </section>
-                    <section className="bordered section3">
-                        <h1>容量指标</h1>
-                        <Charts5/>
-                    </section>
-                    <section className="bordered section4">
-                        <h1>浙江省能源地图</h1>
-                        <Charts6/>
-                    </section>
-                    <section className="bordered section5">
-                        <h1>容量指标</h1>
-                        <Charts7/>
-                    </section>
-                    <section className="section6">
-                        <div className="bordered line" style={{marginBottom:px(10)}}>
-                            <h1>容量指标</h1>
-                            <Charts8/>
-                        </div>
-                        <div className="bordered line" style={{marginBottom:px(10)}}>
-                            <h1>运行模式</h1>
-                            <Charts9/>
-                        </div>
-                        <div className="bordered line">
-                            <h1>当日累计调控</h1>
-                            <Charts10/>
-                        </div>
-                    </section>
-                </main>
-                <footer>
-                    tzc
-                </footer>
-            </div>
-        </div>
+        </VPContainer>
     );
 };

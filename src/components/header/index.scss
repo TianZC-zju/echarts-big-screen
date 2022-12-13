@@ -1,0 +1,55 @@
+@import "../../shared/helper";
+
+.header{
+
+      height: px(40);
+      background-size:100% 100% ;
+      text-align: center;
+      line-height: px(40);
+      display: grid;
+      grid-template:"l c r" 100%/ 1fr 50% 1fr;
+
+      .headerCenter{
+        grid-area: c;
+        font-size: px(25);
+        background-image: linear-gradient(#a9d6fc,#0dacff);
+        -webkit-background-clip:text;
+        color: transparent;
+      }
+      .headerLeft,.headerRight{
+        display: flex;
+        align-items: center;
+        span{
+          color:#70AAD3;
+          background-image: url("../../images/button.png");
+          background-size: 100% 100%;
+          font-size: 1px;
+          padding-left: px(16);
+          padding-right: px(16);
+          width: px(106);
+          line-height: px(30);
+          height: px(30);
+          cursor: pointer;
+
+          &:hover{
+            border-bottom: 1px solid red;
+          }
+
+
+        }
+
+      }
+      .headerLeft{
+        grid-area: l;
+        justify-content: flex-end;
+      }
+
+      .headerRight{
+        grid-area: r;
+        justify-content: flex-start;
+        span{
+
+          margin-right: 5%;
+        }
+      }
+    }
