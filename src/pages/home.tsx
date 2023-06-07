@@ -19,7 +19,7 @@ export const Home = () => {
     <VPContainer>
       <main className="home">
         <section className="section1">
-          <VPBorderBox title="容量指标" className="bar">
+          <VPBorderBox title="当月五大集团利用小时对比" className="bar">
             <Charts1 />
           </VPBorderBox>
           <VPBorderBox title="装机容量和发电量" className="bar bar2">
