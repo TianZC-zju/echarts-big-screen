@@ -48,7 +48,7 @@ export const Home = () => {
         </section>
         <section className="section6">
           <div className="bordered line" style={{ marginBottom: px(10) }}>
-            <h1>容量指标</h1>
+            <h1>负荷预测</h1>
             <Charts8 />
           </div>
           <div className="bordered line" style={{ marginBottom: px(10) }}>
